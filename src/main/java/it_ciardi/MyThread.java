@@ -16,9 +16,7 @@ public class MyThread extends Thread {
 
     public void run() {
 
-        Boolean b = false;
-
-        System.out.println("qualcuno si è collegato");
+        System.out.println("Qualcuno si è collegato");
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             DataOutputStream out = new DataOutputStream(s.getOutputStream());
